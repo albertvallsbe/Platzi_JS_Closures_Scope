@@ -1,7 +1,7 @@
 var hello = 'Hello';
 let world = 'Hello World';
-const helloworld = 'Hello World';
-//console.log(hello);
+const helloworld = 'Hello World!';
+// console.log(hello);
 
 const anotherFunction = () => {
     console.log(hello);
@@ -11,7 +11,7 @@ const anotherFunction = () => {
 
 anotherFunction();
 
-//prova 1
+//prova 1 (Mala Practica!)
 const helloWorld = () => {
     globalVar = 'Im global';
 }
@@ -19,13 +19,12 @@ const helloWorld = () => {
 helloWorld()
 console.log(globalVar);
 
-
 //prova 2
 const anotherFunction = () => {
-    var localVar = globalVar = 'Im global';
+    var localVar = globalVar = 'Im global 2';
 }
 
 anotherFunction()
 console.log(globalVar);
-// Accedir a la variable Local donarà error.
+console.log(localVar); // Accedir a la variable Local donarà error.
 // console.log(localVar);
